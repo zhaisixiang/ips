@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <link rel="icon" href="https://wap.cloudns.org/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="https://wap.cloudns.org/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://wap.cloudns.org/css/bulma.min.css">
+    <link rel="stylesheet" href="https://wap.cloudns.org/css/suka.css">
+    <script src="https://wap.cloudns.org/speed.js"></script>
+    <script src="https://wap.cloudns.org/apps.js"></script>
+<title>全面显示IP地址信息</title>
+<meta name="keywords" content="全面显示ip地址信息" />
+<meta name="description" content="全方位查询本机和代理的IP地址" />
+</head>
+
+<body>
+    <div class="container">
+        <section class="section">
+            <h1 class="sk-text-center title">MYIP🌏地址信息</h1>
+            <div class="columns">
+                <div class="column">
+                    <div class="box">
+                        <h2 class="sk-text-center sk-text-bold subtitle sk-mb-1">从国内查询</h2>
+                        <p class="sk-text-center sk-text-small">数据来源&ensp;ip-api.com</p>
+                        <hr class="sk-my-2">
+                        <div class="ip-body">
+                            <div class="sk-text-center">
+                                <span id="ip-cnip-qizhi"></span><span id="ip-cnip"></span>
+                                <p id="ip-cnip-geo" class="sk-text-small"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="box">
+                        <h2 class="sk-text-center sk-text-bold subtitle sk-mb-1">从国内查询</h2>
+                        <p class="sk-text-center sk-text-small">数据来源&ensp;测速网</p>
+                        <hr class="sk-my-2">
+                        <div class="ip-body">
+                            <div class="sk-text-center">
+                                <span id="ip-spee-qizhi"></span><span id="ip-spee"></span>
+                                <p id="ip-spee-geo" class="sk-text-small"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                    <div class="box">
+                        <h2 class="sk-text-center sk-text-bold subtitle sk-mb-1">从国外查询</h2>
+                        <p class="sk-text-center sk-text-small">数据来源&ensp;ipapi.co</p>
+                        <hr class="sk-my-2">
+                        <div class="ip-body">
+                            <div class="sk-text-center">
+                                <span id="ip-ipapi-qizhi"></span><span id="ip-ipapi"></span>
+                                <p id="ip-ipapi-geo" class="sk-text-small"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="box">
+                        <h2 class="sk-text-center sk-text-bold subtitle sk-mb-1">从国外查询</h2>
+                        <p class="sk-text-center sk-text-small">数据来源&ensp;ipinfo.io</p>
+                        <hr class="sk-my-2">
+                        <div class="ip-body">
+                            <div class="sk-text-center">
+                                <span id="ip-info-qizhi"></span><span id="ip-info"></span>
+                                <p id="ip-info-geo" class="sk-text-small"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                    <div class="box">
+                        <h2 class="sk-text-center sk-text-bold subtitle sk-mb-1">从国外查询</h2>
+                        <p class="sk-text-center sk-text-small">数据来源&ensp;ipify.org</p>
+                        <hr class="sk-my-2">
+                        <div class="ip-body">
+                            <div class="sk-text-center">
+                                <span id="ip-ipify-qizhi"></span><span id="ip-ipify"></span>
+                                <p id="ip-ipify-geo" class="sk-text-small"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="box">
+                        <h2 class="sk-text-center sk-text-bold subtitle sk-mb-1">从国外查询</h2>
+                        <p class="sk-text-center sk-text-small">数据来源&ensp;ip.sb</p>
+                        <hr class="sk-my-2">
+                        <div class="ip-body">
+                            <div class="sk-text-center">
+                                <span id="ip-ipsb-qizhi"></span><span id="ip-ipsb"></span>
+                                <p id="ip-ipsb-geo" class="sk-text-small"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h1 class="sk-text-center title">互联网🌐连通性</h1>
+            <div class="columns is-mobile is-multiline">
+                <div class="column is-half-mobile">
+                    <div class="box">
+                        <h2 class="sk-text-center sk-text-bold subtitle sk-mb-1">百度</h2>
+                        <p class="sk-text-center sk-text-small">国内网站</p>
+                        <hr class="sk-my-2">
+                        <div class="http-body">
+                            <div class="sk-text-center">
+                                <p id="http-baidu"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-half-mobile">
+                    <div class="box">
+                        <h2 class="sk-text-center sk-text-bold subtitle sk-mb-1">网易</h2>
+                        <p class="sk-text-center sk-text-small">国内网站</p>
+                        <hr class="sk-my-2">
+                        <div class="http-body">
+                            <div class="sk-text-center">
+                                <p id="http-163"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-half-mobile">
+                    <div class="box">
+                        <h2 class="sk-text-center sk-text-bold subtitle sk-mb-1">腾讯</h2>
+                        <p class="sk-text-center sk-text-small">国内网站</p>
+                        <hr class="sk-my-2">
+                        <div class="http-body">
+                            <div class="sk-text-center">
+                                <p id="http-qq"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-half-mobile">
+                    <div class="box">
+                        <h2 class="sk-text-center sk-text-bold subtitle sk-mb-1">新浪</h2>
+                        <p class="sk-text-center sk-text-small">国内网站</p>
+                        <hr class="sk-my-2">
+                        <div class="http-body">
+                            <div class="sk-text-center">
+                                <p id="http-sina"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="columns is-mobile is-multiline">
+
+                <div class="column is-half-mobile">
+                    <div class="box">
+                        <h2 class="sk-text-center sk-text-bold subtitle sk-mb-1">Twitter</h2>
+                        <p class="sk-text-center sk-text-small">海外网站</p>
+                        <hr class="sk-my-2">
+                        <div class="http-body">
+                            <div class="sk-text-center">
+                                <p id="http-twitter"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-half-mobile">
+                    <div class="box">
+                        <h2 class="sk-text-center sk-text-bold subtitle sk-mb-1">FaceBook</h2>
+                        <p class="sk-text-center sk-text-small">海外网站</p>
+                        <hr class="sk-my-2">
+                        <div class="http-body">
+                            <div class="sk-text-center">
+                                <p id="http-facebook"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-half-mobile">
+                    <div class="box">
+                        <h2 class="sk-text-center sk-text-bold subtitle sk-mb-1">NetFlix</h2>
+                        <p class="sk-text-center sk-text-small">海外网站</p>
+                        <hr class="sk-my-2">
+                        <div class="http-body">
+                            <div class="sk-text-center">
+                                <p id="http-netflix"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-half-mobile">
+                    <div class="box">
+                        <h2 class="sk-text-center sk-text-bold subtitle sk-mb-1">Disney</h2>
+                        <p class="sk-text-center sk-text-small">海外网站</p>
+                        <hr class="sk-my-2">
+                        <div class="http-body">
+                            <div class="sk-text-center">
+                                <p id="http-disney"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="columns is-mobile is-multiline">
+                <div class="column is-half-mobile">
+                    <div class="box">
+                        <h2 class="sk-text-center sk-text-bold subtitle sk-mb-1">Google</h2>
+                        <p class="sk-text-center sk-text-small">海外网站</p>
+                        <hr class="sk-my-2">
+                        <div class="http-body">
+                            <div class="sk-text-center">
+                                <p id="http-google"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-half-mobile">
+                    <div class="box">
+                        <h2 class="sk-text-center sk-text-bold subtitle sk-mb-1">YouTube</h2>
+                        <p class="sk-text-center sk-text-small">海外网站</p>
+                        <hr class="sk-my-2">
+                        <div class="http-body">
+                            <div class="sk-text-center">
+                                <p id="http-youtube"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-half-mobile">
+                    <div class="box">
+                        <h2 class="sk-text-center sk-text-bold subtitle sk-mb-1">TikTok</h2>
+                        <p class="sk-text-center sk-text-small">海外网站</p>
+                        <hr class="sk-my-2">
+                        <div class="http-body">
+                            <div class="sk-text-center">
+                                <p id="http-tiktok"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-half-mobile">
+                    <div class="box">
+                        <h2 class="sk-text-center sk-text-bold subtitle sk-mb-1">ChatGPT</h2>
+                        <p class="sk-text-center sk-text-small">海外网站</p>
+                        <hr class="sk-my-2">
+                        <div class="http-body">
+                            <div class="sk-text-center">
+                                <p id="http-openai"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <h2 class="sk-text-center title">🚫调试页面🚫禁止使用🚫</h2>
+    </div>
+    <script>
+        HTTP.runcheck();
+        IP.getIpapiIP();
+        IP.getIpify();
+        IP.getCNIP();
+        IP.getSPEE();
+        IP.getIPSB();
+        IP.getINFO();
+    </script>
+</body>
+</html>
